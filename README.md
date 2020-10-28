@@ -1,8 +1,11 @@
 # Просмотр .json фаила.
+Для сборки jar:  
+mvn clean compile assembly:single  
 
 Для запуска программы:  
   
 java -jar -Dfile.encoding=UTF-8 jfr.jar C:\projects\Json_Flight_Reader\flights.json from Москва to Хабаровск  
+
 Так же можно не указывать from Москва to Хабаровск или указать что-то одно (или from Москва, или to Хабаровск)  
 Описание:  
 Напишите программу на языке программирования Java,  

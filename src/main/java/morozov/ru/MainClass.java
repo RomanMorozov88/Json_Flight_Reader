@@ -41,22 +41,15 @@ public class MainClass {
             first = flights.get(0);
             last = flights.get(flights.size() - 1);
 
-            int count = flights.size();
-            int totalPrice = 0;
-            for (FlightInfo f : flights) {
-                totalPrice += f.getPrice();
-            }
-
-            System.out.println(" * * *");
+            System.out.println("\nМинимальная стоимость:");
             System.out.println(first.toString());
-            System.out.println(" * * *");
+            System.out.println("\nМаксимальная стоимость:");
             System.out.println(last.toString());
-            System.out.println(" * * *");
-            System.out.println("Cредняя стоимость: " + totalPrice / count);
+            System.out.println("\nСредняя стоимость:");
+            System.out.println(flights.get(flights.size() / 2));
 
         } else if (flights != null && flights.size() == 1) {
             first = flights.get(0);
-            System.out.println(" * * *");
             System.out.println(first.toString());
         } else {
             System.out.println("Что-то не так.");
